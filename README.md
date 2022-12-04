@@ -20,6 +20,13 @@
  4) Explore Home Feed  
 -View followers' posts
  
+## References
+
+    Backend Language: PHP 7   
+
+    Database Server: MySQL 5  
+
+    Web Server: Apache  
 
 # Installation
 
