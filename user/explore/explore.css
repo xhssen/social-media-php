@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body {
+    background-color: #F0F2F5;
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5px 12px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
+    margin-bottom: 20px;
+}
+nav .logo {
+    height: 60px;
+    width: 60px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../assets/rblogo.png);
+    background-size: 118px;
+    background-position: -29px -13.5px;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    
+}
+nav a .profile-photo {
+    height: 55px;
+    width: 55px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../assets/default.png);
+    background-size: 118px;
+    background-position: -32px -22px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    display: inline-block;
+}
+nav .me {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #444;   
+    
+}
+nav ul {
+    height: 70px;
+    display :flex;
+    align-items: center;
+    list-style: none;
+    
+}
+nav ul li:nth-child(4) {
+    margin: 0 16vw 0 14vw;
+}
+nav ul li:nth-child(2) { /* About */
+    margin: 0 35px 0 180px;
+}
+
+nav ul li:nth-child(4) input { /* style Search bar*/
+    width: 30vw;
+    height: 4.8vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #F0F2F5;
+
+}
+nav ul li:nth-child(4) input:focus { /* style Search bar*/
+    outline: none;
+}
+
+nav ul li a{
+    color: #444;
+    text-decoration: none;
+}
+
+.showall {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.post {
+    background-color: #fff;
+    width: 43vw;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-height: 120px;
+    
+    /* border: 1px solid tomato; */    
+}
+.post .post-react {   
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+    padding: 8px;
+}
+.post .post-react i {
+    color :grey;  
+}
+.post i:hover {
+    cursor: pointer;  
+}
+.post .post-react .liked {
+    color : tomato;
+    transition: 0.18s;
+}
+
+.post a {
+    text-decoration: none;
+}
+.post .post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid lightseagreen; */
+}
+.post .post-header .post-author{
+    display: flex;
+    align-items: center;
+}
+
+.post .post-content {
+    border: 0px solid lightseagreen;
+    margin: 5px 0 0 5px;
+}
+
+.post .post-header .post-author .name-date {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.post .post-header .post-author .name-date .post-date {
+    color: #65676B;
+    font-size: 11px;
+}
+
+.profile-photo {
+    height: 47px;
+    width: 47px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../assets/default.png);
+    background-size: 100px;
+    background-position: -28px -18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    list-style: none;
+    
+}

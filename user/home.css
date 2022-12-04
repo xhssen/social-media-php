@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-size: 14px;
+}
+body {
+    background-color: #F0F2F5;
+    font-family: 'Montserrat', sans-serif;
+}
+/* NavBar */
+nav {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5px 12px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
+    
+}
+nav .logo {
+    height: 60px;
+    width: 60px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../assets/rblogo.png);
+    background-size: 118px;
+    background-position: -29px -13.5px;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    
+}
+nav a .profile-photo {
+    height: 55px;
+    width: 55px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../assets/default.png);
+    background-size: 118px;
+    background-position: -32px -22px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    display: inline-block;
+}
+nav .me {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #444;   
+    
+}
+nav ul {
+    height: 70px;
+    display :flex;
+    align-items: center;
+    list-style: none;
+    
+}
+nav ul li:nth-child(4) {
+    margin: 0 16vw 0 14vw;
+}
+nav ul li:nth-child(2) { /* About */
+    margin: 0 35px 0 180px;
+}
+
+nav ul li:nth-child(4) input { /* style Search bar*/
+    width: 30vw;
+    height: 4.8vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #F0F2F5;
+
+}
+nav ul li:nth-child(4) input:focus { /* style Search bar*/
+    outline: none;
+}
+
+nav ul li a{
+    color: #444;
+    text-decoration: none;
+}
+
+/* Container */
+.container {    
+    display :flex;
+    padding: 25px 20px 0 20px;
+    
+
+}
+/* Leftside Bar*/
+
+.Leftside-bar {
+    flex-basis: 25%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;    
+    
+}
+.Leftside-bar ul {
+    height: 80vh;   
+    display :flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+.Leftside-bar ul li {
+    padding: 0px 10px 19px 0px;
+    margin : 10px 0;    
+}
+.Leftside-bar ul li a{
+    font-size: 15px;
+    color: #444;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+.Leftside-bar ul li:nth-child(4) a {
+    margin-left: -4.5px;   
+}
+.Leftside-bar ul li:nth-child(5) {
+    margin-top: 250px;   
+}
+/* Main Feed */
+.main-feed {
+    /* border: 1px solid tomato; */
+    min-height: 40vh; 
+    flex-basis: 50%;   
+    padding: 0 80px;
+}
+.main-feed .post {
+    background-color: #fff;
+    min-height: 50px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* border: 1px solid tomato; */    
+}
+.main-feed .post .post-react {   
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+    padding: 8px;
+}
+.main-feed .post .post-react i {
+    color :grey;  
+}
+.main-feed i:hover {
+    cursor: pointer;  
+}
+.main-feed .post .post-react .liked {
+    color : tomato;
+    transition: 0.18s;
+}
+
+.main-feed .post a {
+    text-decoration: none;
+}
+.main-feed .post .post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid lightseagreen; */
+}
+.main-feed .post .post-header .post-author{
+    display: flex;
+    align-items: center;
+}
+
+.main-feed .post .post-content {
+    border: 0px solid lightseagreen;
+    margin: 5px 0 0 5px;
+}
+
+.main-feed .post .post-header .post-author .name-date {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.main-feed .post .post-header .post-author .name-date .post-date {
+    color: #65676B;
+    font-size: 11px;
+}
+.main-feed .add-post {
+    display: flex;
+}
+.main-feed .add-post-container {
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    
+}
+.main-feed .add-post-container .add-post input {
+    width: 30vw;
+    height: 4.8vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #F0F2F5;
+}
+.main-feed .add-post-container .add-post input:focus { 
+    outline: none;
+}
+.main-feed .add-post-container input[type="submit"] {
+    background: none;
+    border-radius: 10px;
+    padding:0 5px;
+    width: 60px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+    background-color: rgb(215, 211, 235);
+    color:rgb(56, 54, 54);
+}
+.main-feed .add-post-container input[type="submit"]:hover {
+   cursor: pointer;
+}
+/* Rightside Bar */
+
+.Rightside-bar {       
+    min-height: 50vh; 
+    flex-basis: 25%;
+  
+}
+.suggestedList {
+    border-radius: 8px;
+    background-color: #fff;
+    min-height:35vh;
+    
+}
+.listTitle {
+    border-bottom: 3px solid #F0F2F5;
+    padding: 15px;
+}
+
+.listUsers {
+    min-height: 27.5vh;
+    padding: 18px;
+ 
+}
+
+.profile-photo {
+    height: 47px;
+    width: 47px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../assets/default.png);
+    background-size: 100px;
+    background-position: -28px -18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    list-style: none;
+    
+}
+.listUsers a {
+    text-decoration: none;
+}
+.listUsers .userProfile {
+    display: flex;
+    min-width: 220px;
+    /* border: 1px solid red; */
+}
+.listUsers .userProfile .photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.listUsers .userProfile .username {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding-left: 8px;
+
+} 
+.listUsers .userProfile .username a {
+    color: #444;
+}
+.listUsers .follow {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.listUsers .follow input {
+    width: 75px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #e2e4e9;
+    color: #444;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.listUsers .follow input:hover {
+    background-color: #dbdee6;
+    cursor: pointer;
+}

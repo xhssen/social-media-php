@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-size: 14px;
+}
+body {
+    background-color: #F0F2F5;
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5px 12px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
+    
+}
+nav .logo {
+    height: 60px;
+    width: 60px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../assets/rblogo.png);
+    background-size: 118px;
+    background-position: -29px -13.5px;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    
+}
+
+nav a .profile-photo {
+    height: 55px;
+    width: 55px; 
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../assets/default.png);
+    background-size: 118px;
+    background-position: -32px -22px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    display: inline-block;
+}
+nav .me {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #444;   
+    
+}
+nav ul {
+    height: 70px;
+    display :flex;
+    align-items: center;
+    list-style: none;
+    
+}
+nav ul li:nth-child(4) {
+    margin: 0 16vw 0 14vw;
+}
+nav ul li:nth-child(2) { /* About */
+    margin: 0 35px 0 180px;
+}
+
+nav ul li:nth-child(4) input { /* style Search bar*/
+    width: 30vw;
+    height: 4.8vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #F0F2F5;
+
+}
+nav ul li:nth-child(4) input:focus { /* style Search bar*/
+    outline: none;
+}
+
+nav ul li a{
+    color: #444;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    padding: 25px 20px 0 20px;
+}
+.user-card {
+    background-color: #fff;
+    height: 60vh;
+    width: 250px;
+    color: #444;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.pic-name .profile-photo {
+    height: 95px;
+    width: 95px; 
+    border-radius: 70%;
+    background-color: white;
+    background-image: url(../../assets/default.png);
+    background-size: 195px;
+    background-position: -52px -38px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    display: inline-block;
+}
+.user-card .pic-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+} 
+.user-card .pic-name p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.user-details {
+    
+    height: 50%;
+    margin-top: 40px;
+}
+.user-details ul {
+    min-height: 40vh;   
+    display :flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+.user-details ul li {
+    padding: 0px 10px 19px 5px;
+    margin : 9px 0;  
+    font-size: 13px;
+    color: #657785;
+    text-decoration: none;
+    letter-spacing: 1.5px;  
+}
+.profile-header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: white;
+    height: 50px;
+    width: 80%;
+    padding: 2px;
+}
+.profile-header ul {
+    display: flex;
+    flex-direction:row;
+    width: 500px;
+    justify-content: space-around;
+}
+.profile-header ul li{
+    list-style: none;
+    padding: 10px;
+}
+.profile-header ul li:hover {
+    background-color: #e2e4e9;
+    cursor: pointer;
+}
+.follow {
+    width: 95px;
+    height: 45px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #e2e4e9;
+    color: #444;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.follow:hover {
+    background-color: #dbdee6;
+    cursor: pointer;
+}
