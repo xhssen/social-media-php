@@ -21,7 +21,8 @@
 -View followers' posts
  
 ## References
-
+    Frontend Language: HTML | CSS | Javascript
+    
     Backend Language: PHP 7   
 
     Database Server: MySQL 5  
